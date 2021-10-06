@@ -282,3 +282,12 @@ select {
     width: 100%;
   }
 }
+@media (max-width: 500px) {
+  .podium {
+    flex-flow: column wrap;
+  }
+  .name-card {
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+  }
+}
