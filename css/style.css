@@ -91,6 +91,7 @@ select {
 .btn {
   width: 100px;
   height: 50px;
+  -webkit-tap-highlight-color: transparent;
 }
 .btn:hover {
   cursor: pointer;
@@ -111,9 +112,6 @@ form {
   display: flex;
   justify-content: center;
 }
-/* .around {
-  justify-content: space-around;
-} */
 .race {
   width: 85%;
   margin: auto;
