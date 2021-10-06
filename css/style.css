@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+:root {
+  --primary-color: #fb6962;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+body {
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title {
+  text-align: center;
+  font-size: 60px;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+h2 {
+  text-align: center;
+}
+.navbar {
+  display: none;
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  padding-right: 40px;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 3rem;
+  background-color: var(--primary-color);
+  height: 100%;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
+}
+.navbar ul {
+  list-style-type: none;
+}
+.navbar li:hover {
+  text-decoration: underline;
+}
+.active {
+  text-decoration: underline;
+}
+.copy {
+  position: fixed;
+  font-size: 15px;
+  bottom: 20px;
+  right: 115px;
+}
+.screen {
+  display: none;
+  background-color: black;
+  opacity: 0.1;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+}
+#menu {
+  color: white;
+  font-size: 22px;
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  cursor: pointer;
+}
+#close-menu {
+  color: white;
+  font-size: 22px;
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  cursor: pointer;
+}
+input,
+select {
+  max-width: 150px;
+  height: 50px;
+  margin: 0px 15px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 8px;
+  border: none;
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(68, 68, 68);
+}
+
+.btn {
+  width: 100px;
+  height: 50px;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: #e7e7e7;
+}
+.btn:active {
+  transform: translateY(3px);
+}
+.race {
+  width: 85%;
+  margin: auto;
+  color: rgb(68, 68, 68);
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+  margin-top: 50px;
+}
+.container-floating {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  color: rgb(68, 68, 68);
+  padding: 20px 30px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.container-floating button {
+  max-width: 150px;
+  height: 50px;
+  margin: 0px 15px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 8px;
+  border: 1px solid rgb(141, 141, 141);
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(68, 68, 68);
+}
+.fas {
+  font-size: 50px;
+  color: var(--primary-color);
+}
+.basic-info {
+  display: flex;
+  width: 90%;
+  gap: 15%;
+  justify-content: center;
+  padding: 50px 0px;
+  border-bottom: 1px solid rgb(138, 138, 138);
+  flex-wrap: wrap;
+}
+.circuit-map {
+  height: 300px;
+  width: 500px;
+  max-width: 500px;
+}
+.circuit {
+  text-align: left;
+}
+.team {
+  line-height: 0px;
+  font-size: 14px;
+}
+.none {
+  display: none;
+}
+.no-opacity {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+.opacity {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.race-results {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
+  width: 95%;
+}
+.table {
+  display: flex;
+  justify-content: center;
+  width: 95%;
+  overflow-x: scroll;
+  text-align: center;
+}
+.podium {
+  display: flex;
+  gap: 5%;
+  padding: 50px 0px;
+}
+.name-card {
+  display: flex;
+  width: 150px;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  border-radius: 10px;
+  color: white;
+}
+.name-card p {
+  text-align: center;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.4);
+}
+.name-card h1 {
+  text-align: center;
+  font-size: 40px;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+.winner {
+  scale: 1.2;
+  font-weight: bold;
+  background-color: gold;
+}
+.second {
+  background-color: silver;
+}
+.third {
+  background-color: #cd7f32;
+}
+
+.zui-table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  font: normal 13px;
+  width: 100%;
+}
+.zui-table thead th {
+  background-color: silver;
+  color: rgb(68, 68, 68);
+  padding: 10px;
+  text-align: center;
+  text-shadow: 1px 1px 1px #fff;
+}
+.zui-table tbody td {
+  color: rgb(68, 68, 68);
+  padding: 10px;
+  text-shadow: 1px 1px 1px #fff;
+}
+
+.seasonName {
+  text-align: center;
+  font-size: 40px;
+}
+.races {
+  text-align: center;
+  font-size: 30px;
+}
+.drivers {
+  text-align: center;
+  font-size: 28px;
+}
+.constructors {
+  text-align: center;
+  font-size: 28px;
+}
+
+@media (max-width: 1413px) {
+  .podium {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 1000px) {
+  .race {
+    width: 95%;
+  }
+  .table {
+    width: 100%;
+  }
+  .name-card h1 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 550px) {
+  .circuit-map {
+    width: 100%;
+  }
+}
