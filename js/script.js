@@ -38,7 +38,7 @@ const getData = function (e) {
   let race = document.querySelector("#race").value;
   e.preventDefault();
   let request = new XMLHttpRequest();
-  request.open("GET", `http://ergast.com/api/f1/${year}/${race}/results.json`);
+  request.open("GET", `https://ergast.com/api/f1/${year}/${race}/results.json`);
   request.send();
 
   request.addEventListener("load", function () {

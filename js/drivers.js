@@ -55,7 +55,7 @@ const getData = function (e) {
   let year = document.querySelector("#year").value;
   e.preventDefault();
   let request = new XMLHttpRequest();
-  request.open("GET", `http://ergast.com/api/f1/${year}/driverStandings.json`);
+  request.open("GET", `https://ergast.com/api/f1/${year}/driverStandings.json`);
   request.send();
 
   request.addEventListener("load", function () {
@@ -96,7 +96,7 @@ const getData = function (e) {
       let request2 = new XMLHttpRequest();
       request2.open(
         "GET",
-        `http://ergast.com/api/f1/${year}/constructorStandings.json`
+        `https://ergast.com/api/f1/${year}/constructorStandings.json`
       );
       request2.send();
 

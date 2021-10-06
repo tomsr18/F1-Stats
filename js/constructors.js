@@ -56,7 +56,7 @@ const getData = function (e) {
   let request = new XMLHttpRequest();
   request.open(
     "GET",
-    `http://ergast.com/api/f1/${year}/constructorStandings.json`
+    `https://ergast.com/api/f1/${year}/constructorStandings.json`
   );
   request.send();
 
@@ -96,7 +96,7 @@ const getData = function (e) {
       let request2 = new XMLHttpRequest();
       request2.open(
         "GET",
-        `http://ergast.com/api/f1/${year}/driverStandings.json`
+        `https://ergast.com/api/f1/${year}/driverStandings.json`
       );
       request2.send();
 
